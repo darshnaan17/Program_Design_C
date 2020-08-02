@@ -1,0 +1,19 @@
+12	5	A Plague Tale: Innocence
+20	10	Cyberpunk 2077
+13	20	Red Dead Redemption 2
+18	2	NHL 20
+10	12	Samurai Shodown
+22	0	Sekiro: Shadows Die Twice
+45	4	Star Wars Jedi: Fallen Order
+38	10	FINAL FANTASY VII Remake
+26	18	Call of Duty: Modern Warfare
+18	24	Madden NFL 20
+21	18	Death Stranding
+13	26	The Last of Us Part II
+14	20	Need for Speed Heat
+16	5	Resident Evil 3 Remake
+5	18	The Outer Worlds
+23	19	DRAGON BALL Z: KAKAROT
+10	21	Marvels Avengers
+12	12	Days Gone
+14	4	The Sims 4: City Living

@@ -1,0 +1,160 @@
+# Author: Jing Wang, for Program Design
+# try_permits2 is a Unix shell script that will be used to test project 10.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_permits2
+# Compile your program using the makefile you created for project 9, producing permits as the executable
+# To run the script, type
+# ./try_permits2
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+
+echo '===================================================='
+#
+./permits <<-EndOfInput
+a
+COP3514
+U45662345
+Winston
+Jameis
+a
+CDA3103
+U13451988
+Evans
+Mike
+a
+COP2510
+U22884491
+Martin
+Doug
+a
+CIS4250
+U34529986
+Smith
+Jane
+p
+a
+CDA3103
+U13451988
+p
+a
+COP2510
+U22564491
+Chang
+Alex
+p
+a
+CDA3103
+U13409986
+Mahameed
+Hashem
+p
+a
+CDA3103
+U13422321
+Parker
+Daniel
+p
+q
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'opertion code: a'
+echo 'Enter courseID: COP3514'
+echo 'Enter studentID: U45662345'
+echo 'Enter student last name: Winston'
+echo 'Enter student first name: Jameis'
+
+echo 'Enter operation code: a'
+echo 'Enter courseID: CDA3103'
+echo 'Enter studentID: U13451988'
+echo 'Enter student last name: Evans'
+echo 'Enter student first name: Mike'
+
+echo 'Enter operation code: a'
+echo 'Enter courseID: COP2510'
+echo 'Enter studentID: U22884491'
+echo 'Enter student last name: Martin'
+echo 'Enter student first name: Doug'
+
+echo 'Enter opertion code: a'
+echo 'Enter courseID: CIS4250'
+echo 'Enter studentID: U34529986'
+echo 'Enter student last name: Smith'
+echo 'Enter student first name: Jane'
+
+echo 'Enter operation code: p'
+echo '=================================================================='
+echo 'CourseID  StudentID  	 Last Name       First Name	Status'
+echo 'CDA3103	U13451988	Evans           Mike		pending'
+echo 'CIS4250	U34529986	Smith		Jane		pending'
+echo 'COP2510	U22884491	Martin          Doug		pending'
+echo 'COP3514	U45662355	Winston         Jameis		pending'
+echo '=================================================================='
+
+echo 'Enter operation code: a'
+echo 'Enter courseID: CDA3103'
+echo 'Enter studentID: U13451988'
+echo 'Permit request already existed'
+
+echo 'Enter operation code: p'
+echo '=================================================================='
+echo 'CourseID  StudentID  	 Last Name       First Name	Status'
+echo 'CDA3103	U13451988	Evans           Mike		pending'
+echo 'CIS4250	U34529986	Smith		Jane		pending'
+echo 'COP2510	U22884491	Martin          Doug		pending'
+echo 'COP3514	U45662355	Winston         Jameis		pending'
+echo '=================================================================='
+
+echo 'Enter operation code: a'
+echo 'Enter courseID: COP2510'
+echo 'Enter studentID: U22564491'
+echo 'Enter student last name: Chang'
+echo 'Enter student first name: Alex'
+
+echo '=================================================================='
+echo 'CourseID  StudentID  	 Last Name       First Name	Status'
+echo 'CDA3103	U13451988	Evans           Mike		pending'
+echo 'CIS4250	U34529986	Smith		Jane		pending'
+echo 'COP2510	U22564491	Chang          Alex		pending'
+echo 'COP2510	U22884491	Martin          Doug		pending'
+echo 'COP3514	U45662355	Winston         Jameis		pending'
+echo '=================================================================='
+
+echo 'Enter operation code: a'
+echo 'Enter courseID: CDA3103'
+echo 'Enter studentID: U13409986'
+echo 'Enter student last name: Mahameed'
+echo 'Enter student first name: Hashem'
+
+echo 'Enter operation code: p'
+echo '=================================================================='
+echo 'CourseID  StudentID  	 Last Name       First Name	Status'
+echo 'CDA3103	U13409986	Mahameed         Hashem		pending'
+echo 'CDA3103	U13451988	Evans           Mike		pending'
+echo 'CIS4250	U34529986	Smith		Jane		pending'
+echo 'COP2510	U22564491	Chang          Alex		pending'
+echo 'COP2510	U22884491	Martin          Doug		pending'
+echo 'COP3514	U45662355	Winston         Jameis		pending'
+echo '=================================================================='
+
+echo 'Enter operation code: a'
+echo 'Enter courseID: CDA3103'
+echo 'Enter studentID: U13422321'
+echo 'Enter student last name: Parker'
+echo 'Enter student first name: Daniel'
+
+echo 'Enter operation code: p'
+echo '=================================================================='
+echo 'CourseID  StudentID  	 Last Name       First Name	Status'
+echo 'CDA3103	U13409986	Mahameed         Hashem		pending'
+echo 'CDA3103	U13422321	Parker          Daniel		pending'
+echo 'CDA3103	U13451988	Evans           Mike		pending'
+echo 'CIS4250	U34529986	Smith		Jane		pending'
+echo 'COP2510	U22564491	Chang          Alex		pending'
+echo 'COP2510	U22884491	Martin          Doug		pending'
+echo 'COP3514	U45662355	Winston         Jameis		pending'
+echo '=================================================================='
+
+
+echo 'Enter operation code: q'

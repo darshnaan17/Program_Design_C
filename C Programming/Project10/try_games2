@@ -1,0 +1,36 @@
+#test script for project 7
+#Author: Jing Wang, for Program Design
+#To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_games
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_games
+# The user input will not be shown on the screen
+./a.out  <<-EndOfInput
+PS4_games.txt
+EndOfInput
+#
+cat sorted_PS4_games.txt
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo '45	4		Star Wars Jedi: Fallen Order'
+echo '38	10		FINAL FANTASY VII Remake'
+echo '26	18		Call of Duty: Modern Warfare'
+echo '23	19		DRAGON BALL Z: KAKAROT'
+echo '22	0		Sekiro: Shadows Die Twice'
+echo '21	18		Death Stranding'
+echo '20	10		Cyberpunk 2077'
+echo '18	2		NHL 20'
+echo '18	24		Madden NFL 20'
+echo '16	5		Resident Evil 3 Remake'
+echo '14	20		Need for Speed Heat'
+echo '14	4		The Sims 4: City Living'
+echo '13	20		Red Dead Redemption 2'
+echo '13	26		The Last of Us Part II'
+echo '12	5		A Plague Tale: Innocence'
+echo '12	12		Days Gone'
+echo '10	12		Samurai Shodown'
+echo '10	21		Marvels Avengers'
+echo '5	18		The Outer Worlds' 
+echo '========================================================='
